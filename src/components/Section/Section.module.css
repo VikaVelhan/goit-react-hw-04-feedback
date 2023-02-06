@@ -1,0 +1,12 @@
+.section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  display: block;
+}
+.title {
+  font-size: 60px;
+  color: rgb(57, 18, 96);
+  text-align: center;
+}
