@@ -10,12 +10,28 @@ export function App() {
   const [bad, setBad] = useState(0);
 
   const countFeedback = e => {
-    if (e === 'Good') {
+    /*  if (e === 'Good') {
       setGood(prevState => prevState + 1);
     } else if (e === 'Neutral') {
       setNeutral(prevState => prevState + 1);
     } else if (e === 'Bad') {
       setBad(prevState => prevState + 1);
+    }*/
+    switch (e) {
+      case 'Good':
+        setGood(good + 1);
+        break;
+
+      case 'Neutral':
+        setNeutral(neutral + 1);
+        break;
+
+      case 'Bad':
+        setBad(bad + 1);
+        break;
+
+      default:
+        return;
     }
   };
 
